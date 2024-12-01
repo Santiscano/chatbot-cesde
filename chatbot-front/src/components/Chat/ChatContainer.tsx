@@ -21,8 +21,8 @@ export const ChatContainer: React.FC = () => {
   }, [messages]);
 
   return (
-    <div className='flex w-full'>
-      <div className="flex flex-col h-full w-[65%]">
+    <div className='flex w-full max-h-[calc(100vh-4rem)]'>
+      <div className="flex flex-col h-100vh w-[70%]">
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

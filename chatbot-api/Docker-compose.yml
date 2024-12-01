@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  mysqldb:
+    image: mysql:latest
+    container_name: chatbot
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: cesdeBot
+      MYSQL_USER: cesde
+      MYSQL_PASSWORD: 123456
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - 3307:3306
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin-client
+    depends_on:
+      - mysqldb
+    environment:
+      PMA_HOST: mysqldb
+      MYSQL_ROOT_PASSWORD: 123456
+    ports:
+      - "8080:80"
+volumes:
+  mysql_data:

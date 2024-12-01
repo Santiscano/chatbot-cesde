@@ -37,7 +37,17 @@ const suggestions = [
     id: 7,
     ask: "¿Qué programas de becas hay disponibles?",
     response: "Ofrecemos becas para estudiantes destacados, con necesidades económicas y para programas específicos."
-  }
+  },
+  // {
+  //   id: 8,
+  //   ask: "¿Cuáles son los programas educativos que ofrece el CESDE?",
+  //   response: "Contamos con una amplia variedad de programas educativos: Servicio de Mantenimiento -Reparación e Instalación de Electrodomésticos -Atención y Cuidado a Personas Mayores Diseño Gráfico,- Publicación de Contenidos Digitales, - Instalador de Redes de Energía Eléctrica y Solar -Soporte de Sistemas Informáticos -Atención Integral a la Primera Infancia - Desarrollo de Software",
+  // },
+  // {
+  //   id: 9,
+  //   ask: "¿Cuál es el objetivo de los programas educativos?",
+  //   response: "El objetivo de los programas educativos es formar a los estudiantes en competencias laborales para que puedan desempeñarse en el mercado laboral.",
+  // },
 ];
 
 
